@@ -368,7 +368,84 @@ header .wrapper {
   color: #48D494;
 }
 /*styling for class slider end here*/
+/*styling for schedule start here*/
+.schedule {
+  margin: 8% 0;
+}
 
+.schedule .wrapper > h3 {
+  font-size: 30px;
+  text-transform: capitalize;
+  font-weight: bold;
+  margin: 20px 0;
+  color: #48D494;
+}  
+
+.schedule .wrapper > p {
+  color: #6A6251;
+  font-size: 10px;
+  line-height: 18px;
+  margin-bottom: 20px;
+}
+/*styling for weekday-list start here*/
+.weekday-list {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0px;
+}
+
+.weekday-list > li {
+  margin: 10px;
+  padding: 7px 8px;
+  font-size: 10px;
+  color: #48D494;
+  text-transform: capitalize;
+}
+
+.active-day {
+  border: 1px solid #48D494;
+  border-radius: 7%;
+  padding: 7px 10px;
+  background-color: #48D494;
+}
+
+.weekday-list li:first-child {
+  color: #FFF;
+}
+/*styling for weekday-list start here*/
+/*styling for table-list start here*/
+.table-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.table-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.table-row li {
+  border: 1px solid #FFF;
+  border-collapse: collapse;
+  padding: 15px 10px;
+  width: 100%;
+  font-size: 10px;
+  text-transform: capitalize;
+}
+
+.join-now {
+  color: #48D494;
+}
+
+.table-row :last-child {
+  text-align: center;
+}
+
+.table-row > li:nth-child(2) {
+  padding-right: 10%;
+}
+/*styling for table-list end here*/
+/*styling for schedule end here*/
 
 /*=================================
   main styling ends here
