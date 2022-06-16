@@ -110,7 +110,7 @@ li {
 }
 
 body {
-  position: relative;
+  /*position: relative;*/
 }
 
 * {
@@ -121,8 +121,8 @@ body {
   Header styling starts here
 =================================*/
 header {
-  position: absolute;
-  top: 0;
+  /*position: absolute;
+  top: 0;*/
   width: 100%;
   background: transparent;
   display: flex;
@@ -154,8 +154,7 @@ header .wrapper {
 }
 
 .nav-list li:hover {
-  color: #000;
-  background-color: #48D494;
+  color: #48D494;
   cursor: pointer;
   background: transparent;
 }
@@ -190,7 +189,118 @@ header .wrapper {
 /*=================================
   main styling starts here
 =================================*/
+/*styling banner image start here*/
+.banner-img {
+ /* position:absolute;
+  top: 0;*/
+  width: 100%;
+  height: 600px;
+  align-items: center;
+  background-image:url("gymer-banner.jpg");
+}
 
+.banner-img .wrapper > div {
+ /* position: absolute;*/
+  display: flex;
+  padding: 35% 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+}
+
+.banner-img .wrapper > div h2 {
+  font-size: 65px;
+  font-weight: bold;
+  text-transform: capitalize;
+  background: transparent;
+}
+/*styling banner image end here*/
+/*styling introduction section start here*/
+.introduction {
+  margin: 70px 0;
+}
+
+.introduction .wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.introduction .wrapper > ul {
+  margin: 7% 0;
+}
+
+.activity-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.activity-list li {
+  display: flex;
+  flex-direction: row;
+}
+
+.activity-list > li > div > span {
+  visibility: hidden;
+}
+
+.activity-list > li > div > h4 {
+  font-size: 25px;
+  margin: 10% 0;
+}
+
+.activity-list > li > div > p {
+  color: #6A6251;
+  font-size: 10px;
+  margin: 10% 0;
+  text-transform: capitalize;
+}
+
+.your-fitness {
+  display: flex;
+  justify-content: space-between;
+  align-items:flex-start;
+}
+
+.your-fitness > div,figure {
+  width: 50%;
+}
+
+.your-fitness > div {
+  display: flex;
+  flex-direction: column;
+  padding: 0 55px;
+}
+
+.your-fitness > div > h3 {
+  font-size: 30px;
+  text-transform: capitalize;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.your-fitness > div > p {
+  color: #6A6251;
+  font-size: 10px;
+  line-height: 18px;
+  margin-bottom: 20px;
+}
+
+.your-fitness > div > div > a {
+  text-transform: uppercase;
+  padding: 10px 15px;
+  background-color: #48D494;
+  color: #000;
+  border-radius: 5%;
+  font-size: 9px;
+  font-weight: bold;
+  border: 1px solid #48D494;
+}
+
+.your-fitness > figure {
+  box-shadow: 7px 7px #48D494;
+}
+/*styling introduction section end here*/
 
 
 
