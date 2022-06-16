@@ -282,6 +282,8 @@ header .wrapper {
 }
 
 .your-fitness > div > p {
+  width: 100%;
+  padding-right: 10px;
   color: #6A6251;
   font-size: 10px;
   line-height: 18px;
@@ -446,6 +448,76 @@ header .wrapper {
 }
 /*styling for table-list end here*/
 /*styling for schedule end here*/
+/*styling for trainer section start here*/
+.trainers {
+  margin: 8% 0;
+}
+
+.trainers .wrapper > h3 {
+  font-size: 30px;
+  text-transform: capitalize;
+  font-weight: bold;
+  margin: 20px 0;
+  color: #48D494;
+}
+
+.trainers .wrapper > p {
+  color: #6A6251;
+  font-size: 10px;
+  line-height: 18px;
+  margin-bottom: 20px;
+}
+
+.trainers-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.trainers-list li {
+  width: 100%;
+}
+
+.trainers-info li {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.trainers-info {
+  width: 100%;
+}
+
+.trainer-photo {
+  width: 80%;
+  box-shadow: 10px 10px #48D494;
+}
+
+.trainer-name {
+  margin: 40px 0 10px 0;
+  text-transform: capitalize;
+  font-size: 16px;
+}
+
+.trainer-designation {
+  text-transform: capitalize;
+}
+
+.trainers-info p {
+  color: #6A6251;
+  font-size: 10px;
+  line-height: 18px;
+  margin-bottom: 20px;
+}
+
+.trainers-list li:nth-child(2){
+  margin-top: 30px;
+}
+
+.trainers-info li:last-child p {
+  width: 100%;
+}
+/*styling for trainer section end here*/
 
 /*=================================
   main styling ends here
