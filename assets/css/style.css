@@ -108,14 +108,80 @@ li {
   width: 52.88%; 
   margin: 0 auto;
 }
+
+body {
+  position: relative;
+}
+
+* {
+  color: #FFF;
+  background-color: #000;
+}
 /*=================================
   Header styling starts here
 =================================*/
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+}
 
+header .wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 2% 6%;
+  font-size: 13px;
+  background: transparent;
+}
 
+.logo {
+  font-weight: bold;
+  text-transform: capitalize;
+  cursor: pointer;
+  font-size: 15px;
+  background: transparent;
+}
 
+/*styling nav bar start here*/
+.nav-list li {
+  margin-right: 25px;
+  text-transform: capitalize;
+  background: transparent;
+}
 
+.nav-list li:hover {
+  color: #000;
+  background-color: #48D494;
+  cursor: pointer;
+  background: transparent;
+}
 
+.active {
+  border-bottom: 1px solid #FFF;
+  padding-bottom: 4px;
+}
+/*styling nav bar end here*/
+
+.contact-btn {
+  background: transparent;
+}
+
+.contact-btn > a {
+  color: #48D494;
+  font-size: 9px;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  border: 1px solid #48D494;
+}
+
+.contact-btn > a:hover {
+  color: #000;
+  background-color: #48D494;
+}
 
 /*=================================
   Header styling ends here
