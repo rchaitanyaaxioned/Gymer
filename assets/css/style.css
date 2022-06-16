@@ -269,14 +269,16 @@ header .wrapper {
 .your-fitness > div {
   display: flex;
   flex-direction: column;
-  padding: 0 55px;
+  padding: 0 0 0 0;
 }
 
 .your-fitness > div > h3 {
+  padding: 0 90px 0 0;
   font-size: 30px;
   text-transform: capitalize;
   font-weight: bold;
   margin: 20px 0;
+  color: #48D494;
 }
 
 .your-fitness > div > p {
@@ -301,11 +303,71 @@ header .wrapper {
   box-shadow: 7px 7px #48D494;
 }
 /*styling introduction section end here*/
+/*styling classes section start here*/
+.classes {
+  margin: 55px 0;
+}
 
+.classes > .wrapper > h3,p {
+  width: 50%;
+}
 
+.classes .wrapper > h3 {
+  font-size: 30px;
+  text-transform: capitalize;
+  font-weight: bold;
+  margin: 20px 0;
+  color: #48D494;
+}
 
+.classes .wrapper > p {
+  color: #6A6251;
+  font-size: 10px;
+  line-height: 18px;
+  margin-bottom: 20px;
+}
+/*styling classes section end here*/
+/*styling for class slider start here*/
+.class-slider .wrapper{
+  width: 100%;
+}
 
+.class-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
+.class-img-list {
+  display: flex;
+  width: 100%;
+}
+
+.class-img-list > li > figure {
+  width: 100%;
+  border: 1px solid #000;
+}
+
+.class-dot-list {
+  display: flex;
+  justify-content: center;
+}
+
+.class-dot-list > li {
+  margin: 10px;
+}
+
+.class-dot-list > li a::before {
+  content: "\f002";
+  font-family: "fontAwesome";
+  text-indent: 0;
+  padding-right: 10px;
+}
+
+.active-dot a{
+  color: #48D494;
+}
+/*styling for class slider end here*/
 
 
 /*=================================
