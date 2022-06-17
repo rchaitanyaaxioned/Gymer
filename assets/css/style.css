@@ -518,6 +518,71 @@ header .wrapper {
   width: 100%;
 }
 /*styling for trainer section end here*/
+/*styling for services section start here*/
+.services {
+  margin: 8% 0;
+}
+
+.services .wrapper>h3 {
+  width: 30%;
+  font-size: 30px;
+  text-transform: capitalize;
+  font-weight: bold;
+  margin: 20px 0;
+  color: #48D494;
+}
+
+.services .wrapper>p{
+  width: 45%;
+  color: #6A6251;
+  font-size: 10px;
+  line-height: 18px;
+  margin-bottom: 20px;
+}
+
+.featured-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.featured-card-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.featured-card {
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 4%;
+  padding: 20%;
+  flex-direction: column;
+  align-content: space-between;
+  background-color: #48D494;
+}
+
+.featured-card span {
+  visibility: hidden;
+  background: transparent;
+  font-size: 50px;
+  margin: 20px 0;
+} 
+
+.featured-card h4 {
+  margin: 5% 0;
+  background: transparent;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.featured-card p {
+  width: 100%;
+  background: transparent;
+  font-size: 10px;
+}
+/*styling for services section end here*/
 
 /*=================================
   main styling ends here
