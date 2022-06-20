@@ -121,12 +121,13 @@ body {
   Header styling starts here
 =================================*/
 header {
-  /*position: absolute;
-  top: 0;*/
+  position: absolute;
+  top: 0;
   width: 100%;
   background: transparent;
   display: flex;
   justify-content: center;
+  z-index: 1;
 }
 
 header .wrapper {
@@ -144,6 +145,10 @@ header .wrapper {
   cursor: pointer;
   font-size: 15px;
   background: transparent;
+}
+
+.logo h1:hover {
+  color: #48D494;
 }
 
 /*styling nav bar start here*/
@@ -191,12 +196,20 @@ header .wrapper {
 =================================*/
 /*styling banner image start here*/
 .banner-img {
- /* position:absolute;
-  top: 0;*/
+  position:absolute;
+  top: 0;
   width: 100%;
   height: 600px;
   align-items: center;
-  background-image:url("gymer-banner.jpg");
+  background-image:url("/assets/Images/gymer-banner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.banner-img .wrapper {
+  background: transparent;
 }
 
 .banner-img .wrapper > div {
@@ -389,6 +402,7 @@ header .wrapper {
   line-height: 18px;
   margin-bottom: 20px;
 }
+
 /*styling for weekday-list start here*/
 .weekday-list {
   display: flex;
@@ -595,9 +609,10 @@ header .wrapper {
   line-height: 18px;
 }
 
-.featured-dot-list li a::before{
+.featured-dot-list li a::before {
+
   content: "\f5f1"; /*Because solid free icons were not working*/
-  font-family: "Font Awesome 5 Brands";
+  font-family: "Font Awesome 5 Brands"; 
   text-indent: 0;
   font-weight: 400;
   font-size: 12px;
@@ -701,21 +716,51 @@ header .wrapper {
 /*=================================
   footer styling starts here
 =================================*/ 
+footer .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
 
+.footer-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
+.footer-top div {
+  margin-top: 15%;
+}
 
+.fi-first-para {
+  font-size: 10px;
+  color: #FFF;
+  text-transform: uppercase;
+  font-weight: bold;
+}
 
+.fi-second-para {
+  color: #6A6251;
+  font-size: 10px;
+  margin: 4% 0;
+  line-height: 18px;
+  margin-bottom: 20px;
+}
+
+.footer-links {
+  margin-top: 15%;
+}
+
+.footer-links li {
+  color: #48D494;
+  padding: 5px 0;
+  text-transform: capitalize;
+  font-size: 10px;
+}
 
 
 
  /*=================================
   footer styling ends here
-=================================*/ 
-
-/*media query starts*/
-/*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {
-
-
-
-}  
+=================================*/  
