@@ -543,7 +543,8 @@ header .wrapper {
 .featured-list {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
 }
 
 .featured-card-list {
@@ -551,38 +552,147 @@ header .wrapper {
   justify-content: space-between;
 }
 
-.featured-card {
-  overflow: hidden;
+.featured-card-list li {
   display: flex;
   justify-content: space-between;
-  margin: 0 4%;
-  padding: 20%;
-  flex-direction: column;
-  align-content: space-between;
-  background-color: #48D494;
+  overflow: hidden;
+  margin: 3% 0;
 }
 
-.featured-card span {
-  visibility: hidden;
+.featured-card {
+  width: 100%;
+  background-color: #48D494;
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  padding: 15%;
+  margin: 0 4%;
+}
+
+.featured-card span,h4,p {
+  width: 100%;
   background: transparent;
-  font-size: 50px;
-  margin: 20px 0;
-} 
+}
+
+.featured-card span::before {
+  content: "\f184"; /*Because solid free icons were not working*/
+  font-family: "Font Awesome 5 Brands";
+  font-size: 45px;
+  font-weight: 400;
+  color: #FFF;
+  text-indent: 0;
+  margin: 10% 0;
+}
 
 .featured-card h4 {
-  margin: 5% 0;
-  background: transparent;
   text-transform: capitalize;
-  font-weight: bold;
-  font-size: 17px;
+  font-size: 20px;
+  margin: 10% 0;
 }
 
 .featured-card p {
-  width: 100%;
-  background: transparent;
   font-size: 10px;
+  line-height: 18px;
+}
+
+.featured-dot-list li a::before{
+  content: "\f5f1"; /*Because solid free icons were not working*/
+  font-family: "Font Awesome 5 Brands";
+  text-indent: 0;
+  font-weight: 400;
+  font-size: 12px;
 }
 /*styling for services section end here*/
+/* styling for contact us section start here*/
+.contact-us {
+  background-color: #121212;
+}
+
+.contact-us .wrapper {
+  background: transparent;
+  width: 30%;
+}
+
+.contact-us h3 {
+  background: transparent;
+  font-size: 30px;
+  padding-top: 10%;
+  text-transform: capitalize;
+  font-weight: bold;
+  color: #48D494;
+}
+
+.contact-us p {
+  color: #6A6251;
+  font-size: 10px;
+  margin: 2% 0;
+  line-height: 18px;
+  margin-bottom: 20px;
+}
+
+.contact-us form {
+  background: transparent;
+}
+
+.contact-us-form {
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+}
+
+.contact-us-form li {
+  background: transparent;
+}
+ 
+.contact-us-form li div {
+  background: transparent;
+}
+
+.contact-us-form li input {
+  width: 100%;
+  margin: 2% 0;
+  font-size: 12px;
+  padding: 5px 10px;
+  border: 1px solid #FFF;
+  background: transparent;
+}
+
+.csf-first-inputs {
+  display: flex;
+  justify-content: space-between;
+  background: transparent;
+}
+
+.csf-first-inputs div input {
+  font-size: 12px;
+  padding: 5px 10px;
+  border: 1px solid #FFF;
+}
+
+.contact-us-form :nth-child(4) > textarea {
+  width: 100%;
+  height: 150px;
+  margin: 2% 0;
+  font-size: 12px;
+  padding: 5px 10px;
+  border: 1px solid #FFF;
+  background: transparent;
+}
+
+.contact-us-form :nth-child(5) > button {
+  width: 50%;
+  margin: 2% 0;
+  font-size: 10px;
+  padding: 5px 10px;
+  border: 1px solid #48D494;
+  border-radius: 5px;
+  color: #000;
+  text-transform: uppercase;
+  background-color: #48D494;
+  margin-bottom: 15%;
+}
+/* styling for contact us section end here*/
 
 /*=================================
   main styling ends here
