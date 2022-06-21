@@ -8,13 +8,87 @@
    v2.0 | 20110126
    License: none (public domain)
    ========================================================================== */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
-blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,
-ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
-dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,
-tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure,
-figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -24,23 +98,38 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
 /* Force scrollbar */
-html { overflow-y: scroll; }
+html {
+  overflow-y: scroll;
+}
 
 /* Align radios and text inputs with their label */
 
-input[type='radio'] { vertical-align: text-bottom; }
+input[type='radio'] {
+  vertical-align: text-bottom;
+}
 
 /* Hand cursor on clickable input elements */
 label,
 input[type='button'],
 input[type='submit'],
-button { cursor: pointer; }
+button {
+  cursor: pointer;
+}
 
 strong {
   font-weight: bold;
@@ -48,7 +137,9 @@ strong {
   font-size: inherit;
 }
 
-em { font-style: italic; }
+em {
+  font-style: italic;
+}
 
 img {
   width: 100%;
@@ -64,8 +155,13 @@ sup {
   line-height: 0;
 }
 
-sup { top: -.7em; }
-sub { bottom: -.25em; }
+sup {
+  top: -.7em;
+}
+
+sub {
+  bottom: -.25em;
+}
 
 /* 1.2. Clear Fix
    ========================== */
@@ -76,8 +172,13 @@ sub { bottom: -.25em; }
   content: " ";
 }
 
-.cf:after { clear: both; }
-.cf { *zoom: 1; }
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  *zoom: 1;
+}
 
 /*for all*/
 body {
@@ -85,123 +186,122 @@ body {
   font-family: sans-serif;
 }
 
-a { 
+a {
   display: inline-block;
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 li {
   display: inline-block;
   list-style-type: none;
 }
+
 /* Common styling */
-.grey { color: #666; }
-.cap { text-transform: capitalize; }
-.up { text-transform: uppercase; }
-.center { text-align: center; }
-.bold { font-weight: bold; }
-.transition { transition: 1s all ease; }
+.grey {
+  color: #666;
+}
+
+.cap {
+  text-transform: capitalize;
+}
+
+.up {
+  text-transform: uppercase;
+}
+
+.center {
+  text-align: center;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.transition {
+  transition: 1s all ease;
+}
 
 /*for wrapper*/
 .wrapper {
   max-width: 1350px;
-  width: 52.88%; 
+  width: 52.88%;
   margin: 0 auto;
-}
-
-body {
-  /*position: relative;*/
 }
 
 * {
   color: #FFF;
   background-color: #000;
 }
+
 /*=================================
   Header styling starts here
 =================================*/
 header {
-  position: absolute;
-  top: 0;
   width: 100%;
-  background: transparent;
   display: flex;
-  justify-content: center;
+  position: absolute;
   z-index: 1;
+  top: 0;
+  background: transparent;
+  justify-content: center;
 }
 
 header .wrapper {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
   margin: 2% 6%;
-  font-size: 13px;
+  display: flex;
   background: transparent;
+  font-size: 13px;
+  justify-content: space-between;
 }
 
 .logo {
-  font-weight: bold;
-  text-transform: capitalize;
+  background: transparent;
   cursor: pointer;
   font-size: 15px;
-  background: transparent;
-}
-
-.logo h1:hover {
-  color: #48D494;
+  font-weight: bold;
+  text-transform: capitalize;
 }
 
 /*styling nav bar start here*/
 .nav-list li {
   margin-right: 25px;
+  background: transparent;
   text-transform: capitalize;
-  background: transparent;
 }
 
-.nav-list li:hover {
-  color: #48D494;
-  cursor: pointer;
-  background: transparent;
-}
-
-.active {
-  border-bottom: 1px solid #FFF;
-  padding-bottom: 4px;
-}
 /*styling nav bar end here*/
 
+/*styling contact btn start here*/
 .contact-btn {
   background: transparent;
 }
 
-.contact-btn > a {
+.contact-btn>a {
+  padding: 5px 10px;
+  border: 1px solid #48D494;
   color: #48D494;
   font-size: 9px;
-  padding: 5px 10px;
   text-transform: uppercase;
-  border: 1px solid #48D494;
 }
 
-.contact-btn > a:hover {
-  color: #000;
-  background-color: #48D494;
-}
+/*styling contact btn end here*/
 
 /*=================================
   Header styling ends here
-=================================*/  
+=================================*/
 
 /*=================================
   main styling starts here
 =================================*/
 /*styling banner image start here*/
 .banner-img {
-  position:absolute;
+  position: absolute;
   top: 0;
   width: 100%;
   height: 600px;
   align-items: center;
-  background-image:url("/assets/Images/gymer-banner.jpg");
+  background-image: url("/assets/Images/gymer-banner.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -212,8 +312,8 @@ header .wrapper {
   background: transparent;
 }
 
-.banner-img .wrapper > div {
- /* position: absolute;*/
+.banner-img .wrapper>div {
+  /* position: absolute;*/
   display: flex;
   padding: 35% 0;
   flex-direction: column;
@@ -222,12 +322,13 @@ header .wrapper {
   background: transparent;
 }
 
-.banner-img .wrapper > div h2 {
+.banner-img .wrapper>div h2 {
   font-size: 65px;
   font-weight: bold;
   text-transform: capitalize;
   background: transparent;
 }
+
 /*styling banner image end here*/
 /*styling introduction section start here*/
 .introduction {
@@ -239,7 +340,7 @@ header .wrapper {
   flex-direction: column;
 }
 
-.introduction .wrapper > ul {
+.introduction .wrapper>ul {
   margin: 7% 0;
 }
 
@@ -253,16 +354,16 @@ header .wrapper {
   flex-direction: row;
 }
 
-.activity-list > li > div > span {
+.activity-list>li>div>span {
   visibility: hidden;
 }
 
-.activity-list > li > div > h4 {
+.activity-list>li>div>h4 {
   font-size: 25px;
   margin: 10% 0;
 }
 
-.activity-list > li > div > p {
+.activity-list>li>div>p {
   color: #6A6251;
   font-size: 10px;
   margin: 10% 0;
@@ -272,20 +373,21 @@ header .wrapper {
 .your-fitness {
   display: flex;
   justify-content: space-between;
-  align-items:flex-start;
+  align-items: flex-start;
 }
 
-.your-fitness > div,figure {
+.your-fitness>div,
+figure {
   width: 50%;
 }
 
-.your-fitness > div {
+.your-fitness>div {
   display: flex;
   flex-direction: column;
   padding: 0 0 0 0;
 }
 
-.your-fitness > div > h3 {
+.your-fitness>div>h3 {
   padding: 0 90px 0 0;
   font-size: 30px;
   text-transform: capitalize;
@@ -294,7 +396,7 @@ header .wrapper {
   color: #48D494;
 }
 
-.your-fitness > div > p {
+.your-fitness>div>p {
   width: 100%;
   padding-right: 10px;
   color: #6A6251;
@@ -303,7 +405,7 @@ header .wrapper {
   margin-bottom: 20px;
 }
 
-.your-fitness > div > div > a {
+.your-fitness>div>div>a {
   text-transform: uppercase;
   padding: 10px 15px;
   background-color: #48D494;
@@ -314,20 +416,22 @@ header .wrapper {
   border: 1px solid #48D494;
 }
 
-.your-fitness > figure {
+.your-fitness>figure {
   box-shadow: 7px 7px #48D494;
 }
+
 /*styling introduction section end here*/
 /*styling classes section start here*/
 .classes {
   margin: 55px 0;
 }
 
-.classes > .wrapper > h3,p {
+.classes>.wrapper>h3,
+p {
   width: 50%;
 }
 
-.classes .wrapper > h3 {
+.classes .wrapper>h3 {
   font-size: 30px;
   text-transform: capitalize;
   font-weight: bold;
@@ -335,15 +439,16 @@ header .wrapper {
   color: #48D494;
 }
 
-.classes .wrapper > p {
+.classes .wrapper>p {
   color: #6A6251;
   font-size: 10px;
   line-height: 18px;
   margin-bottom: 20px;
 }
+
 /*styling classes section end here*/
 /*styling for class slider start here*/
-.class-slider .wrapper{
+.class-slider .wrapper {
   width: 100%;
 }
 
@@ -358,7 +463,7 @@ header .wrapper {
   width: 100%;
 }
 
-.class-img-list > li > figure {
+.class-img-list>li>figure {
   width: 100%;
   border: 1px solid #000;
 }
@@ -368,35 +473,36 @@ header .wrapper {
   justify-content: center;
 }
 
-.class-dot-list > li {
+.class-dot-list>li {
   margin: 10px;
 }
 
-.class-dot-list > li a::before {
+.class-dot-list>li a::before {
   content: "\f002";
   font-family: "fontAwesome";
   text-indent: 0;
   padding-right: 10px;
 }
 
-.active-dot a{
+.active-dot a {
   color: #48D494;
 }
+
 /*styling for class slider end here*/
 /*styling for schedule start here*/
 .schedule {
   margin: 8% 0;
 }
 
-.schedule .wrapper > h3 {
+.schedule .wrapper>h3 {
   font-size: 30px;
   text-transform: capitalize;
   font-weight: bold;
   margin: 20px 0;
   color: #48D494;
-}  
+}
 
-.schedule .wrapper > p {
+.schedule .wrapper>p {
   color: #6A6251;
   font-size: 10px;
   line-height: 18px;
@@ -410,7 +516,7 @@ header .wrapper {
   margin: 40px 0px;
 }
 
-.weekday-list > li {
+.weekday-list>li {
   margin: 10px;
   padding: 7px 8px;
   font-size: 10px;
@@ -428,6 +534,7 @@ header .wrapper {
 .weekday-list li:first-child {
   color: #FFF;
 }
+
 /*styling for weekday-list start here*/
 /*styling for table-list start here*/
 .table-list {
@@ -457,9 +564,10 @@ header .wrapper {
   text-align: center;
 }
 
-.table-row > li:nth-child(2) {
+.table-row>li:nth-child(2) {
   padding-right: 10%;
 }
+
 /*styling for table-list end here*/
 /*styling for schedule end here*/
 /*styling for trainer section start here*/
@@ -467,7 +575,7 @@ header .wrapper {
   margin: 8% 0;
 }
 
-.trainers .wrapper > h3 {
+.trainers .wrapper>h3 {
   font-size: 30px;
   text-transform: capitalize;
   font-weight: bold;
@@ -475,7 +583,7 @@ header .wrapper {
   color: #48D494;
 }
 
-.trainers .wrapper > p {
+.trainers .wrapper>p {
   color: #6A6251;
   font-size: 10px;
   line-height: 18px;
@@ -524,13 +632,14 @@ header .wrapper {
   margin-bottom: 20px;
 }
 
-.trainers-list li:nth-child(2){
+.trainers-list li:nth-child(2) {
   margin-top: 30px;
 }
 
 .trainers-info li:last-child p {
   width: 100%;
 }
+
 /*styling for trainer section end here*/
 /*styling for services section start here*/
 .services {
@@ -546,7 +655,7 @@ header .wrapper {
   color: #48D494;
 }
 
-.services .wrapper>p{
+.services .wrapper>p {
   width: 45%;
   color: #6A6251;
   font-size: 10px;
@@ -583,13 +692,16 @@ header .wrapper {
   margin: 0 4%;
 }
 
-.featured-card span,h4,p {
+.featured-card span,
+h4,
+p {
   width: 100%;
   background: transparent;
 }
 
 .featured-card span::before {
-  content: "\f184"; /*Because solid free icons were not working*/
+  content: "\f184";
+  /*Because solid free icons were not working*/
   font-family: "Font Awesome 5 Brands";
   font-size: 45px;
   font-weight: 400;
@@ -611,12 +723,14 @@ header .wrapper {
 
 .featured-dot-list li a::before {
 
-  content: "\f5f1"; /*Because solid free icons were not working*/
-  font-family: "Font Awesome 5 Brands"; 
+  content: "\f5f1";
+  /*Because solid free icons were not working*/
+  font-family: "Font Awesome 5 Brands";
   text-indent: 0;
   font-weight: 400;
   font-size: 12px;
 }
+
 /*styling for services section end here*/
 /* styling for contact us section start here*/
 .contact-us {
@@ -653,13 +767,13 @@ header .wrapper {
   background: transparent;
   display: flex;
   flex-direction: column;
-  justify-content:space-between;
+  justify-content: space-between;
 }
 
 .contact-us-form li {
   background: transparent;
 }
- 
+
 .contact-us-form li div {
   background: transparent;
 }
@@ -685,7 +799,7 @@ header .wrapper {
   border: 1px solid #FFF;
 }
 
-.contact-us-form :nth-child(4) > textarea {
+.contact-us-form :nth-child(4)>textarea {
   width: 100%;
   height: 150px;
   margin: 2% 0;
@@ -695,7 +809,7 @@ header .wrapper {
   background: transparent;
 }
 
-.contact-us-form :nth-child(5) > button {
+.contact-us-form :nth-child(5)>button {
   width: 50%;
   margin: 2% 0;
   font-size: 10px;
@@ -707,6 +821,7 @@ header .wrapper {
   background-color: #48D494;
   margin-bottom: 15%;
 }
+
 /* styling for contact us section end here*/
 
 /*=================================
@@ -715,7 +830,7 @@ header .wrapper {
 
 /*=================================
   footer styling starts here
-=================================*/ 
+=================================*/
 footer .wrapper {
   display: flex;
   flex-direction: column;
@@ -759,8 +874,29 @@ footer .wrapper {
   font-size: 10px;
 }
 
-
-
- /*=================================
+/*=================================
   footer styling ends here
-=================================*/  
+=================================*/
+/*media query for 995px starts here*/
+@media only screen and (min-width: 1024px) {
+  .logo a:hover {
+    color: #48D494;
+    border-bottom: 1px solid #FFF;
+  }
+
+  .nav-list li a:hover {
+    padding-bottom: 4px;
+    background: transparent;
+    border-bottom: 1px solid #FFF;
+    color: #48D494;
+    cursor: pointer;
+  }
+
+  .contact-btn>a:hover {
+    background-color: #48D494;
+    color: #000;
+  }
+
+
+
+}
